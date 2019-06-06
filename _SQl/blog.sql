@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2019 at 03:16 PM
+-- Generation Time: Jun 06, 2019 at 03:40 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -71,15 +71,6 @@ CREATE TABLE `posts` (
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `posts`
---
-
-INSERT INTO `posts` (`id`, `title`, `body`, `user_id`, `image`, `created_at`, `updated_at`) VALUES
-(19, 'Post One', 'This is body', 2, '11211_ext_02_en_0_2_1559759468_.jpg', '2019-06-05 14:31:08', '2019-06-05 16:17:38'),
-(20, 'xasx', 'asx', 2, NULL, '2019-06-05 15:49:44', '2019-06-05 15:49:44'),
-(21, 'Post One', 'This is Post One', 1, 'kitchen1_1_1559823822_.jpg', '2019-06-06 08:23:43', '2019-06-06 08:23:43');
-
 -- --------------------------------------------------------
 
 --
@@ -96,14 +87,6 @@ CREATE TABLE `users` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'ArsenMuradyan', 'arsen@mail.com', NULL, '$2y$10$f.K6wOmryrNowWzlEqiM8OZjg4NV4rS0jrApGR1uYptZZ8X3XK8Ei', NULL, '2019-06-05 12:25:31', '2019-06-05 12:25:31'),
-(2, 'Arsen', 'arsen2@mail.com', NULL, '$2y$10$EtUkdzVK7TeBZ3x8ZruPV.mR/Uq1Xem3i16QJ.VuQwvWHxBlLvys2', NULL, '2019-06-05 13:58:32', '2019-06-05 13:58:32');
 
 --
 -- Indexes for dumped tables
